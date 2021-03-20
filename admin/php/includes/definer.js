@@ -1,0 +1,1 @@
+var BASE_URL = 'http://'+window.location.hostname+'/conexionagroecologica/admin/';

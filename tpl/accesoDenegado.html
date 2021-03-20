@@ -1,0 +1,44 @@
+<body>
+	<!-- ENCABEZADO - LOGO - BOTONERA -->
+    <div id="header-wrapper">
+        <div class="contAnchoHeader">
+        <?php
+			include_once('php/comprobadores/encabezado.comprobador.php');
+            include_once('tpl/logoBotonera.html');
+		?>
+        </div>
+    </div>
+    <!-- FIN ENCABEZADO - LOGO - BOTONERA -->
+    
+    <div class="clear"></div>
+
+    <!-- CONTENIDO HOME -->
+    <div id="content-wrapper">
+        <div id="contenedorBloqueSolapa">
+            <div class="solapaVerdeTitulosBuscar">
+                <p>ACCESO DENEGADO</p>
+            </div>
+            <div class="textoCabezeraInfoBloques">
+                <p>Por favor inicie sesi&oacute;n</p>
+            </div>
+            <div class="clear"></div>
+            <div class="texto">
+                <p class="titulito"><a href="index.php">Volver al index</a> - <a href="javascript:void(0)" class="login">Loguearse</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- FIN CONTENT WRAPPER -->
+
+    <div class="clear"></div>
+    
+    <!-- FOOTER WRAPPER -->
+    <div id="footer-wrapper">
+    <?php
+    	$html = Archivo::leer('tpl/pieDePagina.html');
+		include_once('php/replacers/pieDePagina.replacer.php');
+		echo ($html);
+	?>
+    </div>
+    <!-- FIN FOOTER WRAPPER -->
+</body>
+</html>

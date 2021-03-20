@@ -1,0 +1,552 @@
+.clear { clear: both; }
+
+/* ========================================= *
+ *                                           *
+ * Iconos mas Texto Sprite
+ *                                           *
+ * ========================================= */
+.iconsSprite {
+    background-image: url(../images/btn_sprite.png);
+    height: 25px !important;
+    display: block;
+    text-indent: -99999px; }
+
+.iconMiConexion {
+    background-position: -11px -78px;
+    width: 106px; }
+
+.iconMensajes {
+    background-position: -140px -78px;
+    width: 88px; }
+
+.iconPerfil {
+    background-position: -268px -78px;
+    width: 80px; }
+
+.iconBuscar {
+    background-position: -395px -78px;
+    width: 67px; }
+
+.iconVender {
+    background-position: -535px -78px;
+    width: 69px; }
+
+.iconArticulo {
+    background-position: -654px -78px;
+    width: 72px; }
+
+.iconCasosConexion {
+    background-position: -781px -78px;
+    width: 126px; }
+
+.iconPublicar {
+    background-position: -924px -74px;
+    width: 87px; }
+
+.iconQuienesSomos {
+    background-position: -1055px -78px;
+    width: 127px; }
+
+.iconEnLosMedios {
+    background-position: -12px -113px;
+    width: 114px; }
+
+.iconComoComprar {
+    background-position: -159px -113px;
+    width: 126px; }
+
+.iconComoFunciona {
+    background-position: -311px -113px;
+    width: 126px; }
+
+.iconComoVender {
+    background-position: -463px -113px;
+    width: 112px; }
+
+.iconFaq {
+    background-position: -613px -113px;
+    width: 50px; }
+
+.iconLogin {
+    background-position: -760px -113px;
+    width: 72px; }
+
+.iconRegistrarse {
+    background-position: -904px -113px;
+    width: 107px; }
+
+.iconError {
+    background-position: -1060px -113px;
+    width: 58px; }
+
+.iconCompartir {
+    background-position: -14px -143px !important;
+    width: 90px !important; }
+
+.iconAtencion {
+    background-position: -132px -143px !important;
+    width: 86px !important; }
+
+.iconEnviado {
+    background-position: -245px -143px !important;
+    width: 140px !important; }
+
+.iconDenegado {
+    background-position: -407px -143px !important;
+    width: 145px !important; }
+
+/* ========================================= *
+ *                                           *
+ * Botones Sprite
+ *                                           *
+ * ========================================= */
+.formBtnSprite {
+    background-image: url(../images/btn_sprite.png);
+    height: 30px !important;
+    display: block;
+    border: 0 !important;
+    cursor: pointer !important; }
+
+.btnRegistro {
+    background-position: -2px -2px;
+    width: 101px !important; }
+
+.btnRegistro:hover { background-position: -2px -37px; }
+
+.btnLogin {
+    background-position: -744px -2px;
+    width: 66px !important;
+    text-indent: -9999px !important;}
+
+.btnLogin:hover { background-position: -744px -37px; }
+
+.btnAceptar {
+    background-position: -912px -2px;
+    width: 76px !important; }
+
+.btnAceptar:hover { background-position: -912px -37px; }
+
+.btnEnviar {
+    background-position: -912px -2px;
+    width: 76px !important; }
+
+.btnEnviar:hover { background-position: -912px -37px; }
+
+.btnBorrar {
+    background-position: -419px -2px;
+    width: 68px !important;}
+
+.btnBorrar:hover { background-position: -419px -37px; }
+
+.btnCancelar {
+    background-position: -582px -2px;
+    width: 85px !important;}
+
+.btnCancelar:hover { background-position: -582px -37px; }
+
+.btnModificar {
+    background-position: -992px -2px;
+    width: 90px !important; }
+
+.btnModificar:hover { background-position: -992px -37px; }
+
+/* ========================================= *
+ *                                           *
+ * Form Template
+ *                                           *
+ * ========================================= */
+.formTemplate {
+    font-family: Arial;
+    width: 400px;
+    float: left; }
+
+.formTemplate form {
+    min-height: 115px;
+    margin: 20px auto 0px auto; }
+
+.formTemplate .formEncabezado {
+    background-image: url(../images/pattern-barra-top.png);
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    height: 30px;}
+
+.formTemplate .formEncabezado p { padding: 4px 0px 4px 15px; }
+
+.formTemplate .camposContainer {
+    margin: 15px auto;
+    width: 80%;
+    position: relative; }
+
+/*.formTemplate .camposContainer {
+    margin: 0 auto;
+    width: 100%;
+    float: left;
+    position: relative; }*/
+
+.formTemplate .camposContainer label, .formTemplate .camposContainer a {
+    clear: both;
+    color: #808284;
+    display: block;
+    font-size: 13px;
+    height: 25px;
+    text-decoration: none; }
+
+.formTemplate .camposContainer p {
+    color: #808284;
+    font-size: 14px; }
+
+.formTemplate .camposContainer p.mensaje {
+    color: #990000;
+    font-size: 14px; }
+
+.formTemplate .camposContainer input, .formTemplate .camposContainer select {
+    border: 1px solid #F79633;
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 25px;
+    width: 100%;
+}
+.formTemplate .camposContainer select {margin-top: 0}
+
+.formTemplate .camposContainer input[type=checkbox]{ border: 0; }
+
+.formTemplate .camposContainer a { cursor: pointer; }
+
+.formTemplate .camposContainer a:hover { text-decoration: underline; }
+
+/* == IE fix == */
+/* TODO: mover a ie.css */
+
+.formTemplate .formEncabezado p { *padding: 4px 0 0 15px !important; }
+
+.formTemplate form { *margin: 20px auto 0px 50px !important; }
+
+.formTemplate form .recordarContrasena { *border: 0 !important; }
+
+.formTemplate form .propietario { float: left;	}
+
+.formTemplate input.propietario {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: -5px 0 0 5px; }
+
+.formTemplate form label { *height: 20px !important; }
+
+/* ========================================= *
+ *                                           *
+ * Login Form
+ *                                           *
+ * ========================================= */
+.formLogin .camposContainer label.recordarContrasena { float: left; }
+
+.formLogin .camposContainer input.recordarContrasena {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: -5px 0 0 5px; }
+
+.formLogin .btnLogin {
+    float: right;
+    margin-top: -30px; }
+
+/* ========================================= *
+ *                                           *
+ * Registro Form
+ *                                           *
+ * ========================================= */
+.formRegistro .btnRegistro { float: right; }
+
+.formRegistro .cerrarColorBox {
+    padding: 5px;
+    float: left; }
+
+.formRegistro .cerrarColorBox:hover { text-decoration: underline; }
+
+/* ========================================= *
+ *                                           *
+ * Compartir Form
+ *                                           *
+ * ========================================= */
+.formCompartir .btnEnviar { float: right; }
+
+/* ========================================= *
+ *                                           *
+ * Borrar Form
+ *                                           *
+ * ========================================= */
+.formBorrar .camposContainer {
+    width: 80%;
+    height: 60px;
+    margin: 20px auto;
+    float: none; }
+
+.formBorrar .btnBorrar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #000 !important; }
+
+.formBorrar .btnCancelar {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+/* ========================================= *
+ *                                           *
+ * Error Form
+ *                                           *
+ * ========================================= */
+.formErrorLogin .camposContainer {
+    width: 80%;
+    height: 75px;
+    margin: 20px auto;
+    float: none;
+    position: relative; }
+
+.formErrorLogin .camposContainer a {
+    font-size: 16px;
+    color: #CC6633;
+    text-decoration: none; }
+
+/* ========================================= *
+ *                                           *
+ * NoLogin Form
+ *                                           *
+ * ========================================= */
+.formNoLogin .camposContainer label.recordarContrasena { float: left; }
+
+.formNoLogin .camposContainer input.recordarContrasena {
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: -5px 0 0 5px; }
+
+.formNoLogin .camposContainer .volver { margin: 5px 0; }
+
+.formNoLogin .btnLogin {
+    float: right;
+    margin-top: -30px; }
+
+/* ========================================= *
+ *                                           *
+ * VentasError Form
+ *                                           *
+ * ========================================= */
+.formVentasError .camposContainer {
+    width: 90%;
+    margin: 5px auto;
+    float: none;
+    padding: 15px 0 0 0; }
+
+.formVentasError .camposContainer p {
+    margin: 5px 0;
+    font-size: 16px; }
+
+/* ========================================= *
+ *                                           *
+ * Comprar Form
+ *                                           *
+ * ========================================= */
+.formComprar .camposContainer {
+    width: 80%;
+    height: 60px;
+    margin: 20px auto;
+    float: none; }
+
+.formComprar .btnAceptar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #000 !important; }
+
+.formComprar .btnCancelar {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+/* ========================================= *
+ *                                           *
+ * Borrar Transaccion Form
+ *                                           *
+ * ========================================= */
+.formBorrarTransaccion .camposContainer {
+    width: 80%;
+    height: 60px;
+    margin: 20px auto;
+    float: none; }
+
+.formBorrarTransaccion .btnBorrar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #000 !important; }
+
+.formBorrarTransaccion .btnCancelar {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+/* ========================================= *
+ *                                           *
+ * Borrar Mensaje Form
+ *                                           *
+ * ========================================= */
+.formBorrarMensaje .camposContainer {
+    width: 80%;
+    height: 60px;
+    margin: 20px auto;
+    float: none; }
+
+.formBorrarMensaje .btnBorrar {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #000 !important; }
+
+.formBorrarMensaje .btnCancelar {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+
+/* ========================================= *
+ *                                           *
+ * Datos Personales Form
+ *                                           *
+ * ========================================= */
+
+.formDatosPersonales .formTemplate {
+    width: 100%;
+}
+
+.formDatosPersonales p {
+    display: block;
+    color: #808284;
+    font-size: 13px;
+    min-height: 25px;
+    float: left;
+    padding: 15px 0 5px 0;
+    margin: 0 15px 15px 15px;
+    width: 95%;
+}
+
+.formDatosPersonales p:first-child {
+    /*border-bottom: 1px #CCCCCC solid;*/
+}
+
+.formDatosPersonales .camposContainer {
+    width: 38%;
+    margin: 0 0 15px 15px;
+    float: left;
+}
+
+.formDatosPersonales p a {
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.formDatosPersonales .camposContainerUltimo {
+    width: 15%;
+    float: right;
+    padding: 0 22px 0 0;
+}
+
+.formDatosPersonales .camposContainer .formBtnSprite, .formDatosPersonales .camposContainer a {
+    text-align: center;
+    float: right;
+}
+
+
+/* ========================================= *
+ *                                           *
+ * Leer Mensaje
+ *                                           *
+ * ========================================= */
+
+.formLeerMensaje .botones p {
+    position: relative;
+}
+
+.formLeerMensaje .botones {
+    width: 315px;
+    position: fixed;
+    bottom: 25px;
+}
+
+.formLeerMensaje #borrar {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    margin: 0 !important;
+}
+
+.formLeerMensaje #responder {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0 !important;
+}
+
+
+/* ========================================= *
+ *                                           *
+ * Leer Mensaje
+ *                                           *
+ * ========================================= */
+
+.formLeerMensajeAdmin .botones p {
+    position: relative;
+}
+
+.formLeerMensajeAdmin .botones {
+    width: 315px;
+    position: fixed;
+    bottom: 25px;
+}
+
+.formLeerMensajeAdmin #borrar {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    margin: 0 !important;
+}
+
+.btn {
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: none !important;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: #fff;
+    width: auto !important;
+}
+
+.btn:hover {background: #999 !important}
+
+.btn.naranja {
+    background: #dc9926; /* Old browsers */
+    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2RjOTkyNiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkYzZhMjYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+    background: -moz-linear-gradient(top,  #dc9926 0%, #dc6a26 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#dc9926), color-stop(100%,#dc6a26)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #dc9926 0%,#dc6a26 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #dc9926 0%,#dc6a26 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #dc9926 0%,#dc6a26 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #dc9926 0%,#dc6a26 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dc9926', endColorstr='#dc6a26',GradientType=0 ); /* IE6-8 */
+}

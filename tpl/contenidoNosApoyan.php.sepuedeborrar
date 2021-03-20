@@ -1,0 +1,32 @@
+<div id="contenedorBloqueSolapa">
+    <div class="solapaVerdeTitulos">
+        <div id="spriteNosApoyan"><p>Nos Apoyan</p></div>
+    </div>
+    <div class="clear"></div>
+    <div class="contInfoBloques">
+		<div class="grilla-logos-destacados">
+			<div class="logolargo"><a href="http://www.buenosaires.gob.ar/agenciaambiental" target="_blank"><img src="images/apoyan/APRA.jpg" alt="APRA" title="APRA" /></a></div>
+		</div>
+	
+        <div class="grilla-logos">
+				<div class="logo"><a href="http://www.santafe.gov.ar/" target="_blank"><img src="images/apoyan/Santa Fe.jpg" alt="Gobierno de Santa Fe" title="Gobierno de Santa Fe" /></a></div>
+				<div class="logo"><a href="http://www.opds.gba.gov.ar/" target="_blank"><img src="images/apoyan/opds2.jpg" alt="OPDS" title="OPDS" /></a></div>
+				<div class="logo"><a href="#"><img src="images/apoyan/tetra-pak-logo.jpg" alt="Tetra Pack" title="Tetra Pack" /></a></div>
+				<div class="logo"><a href="http://www.subproductes.com/eBSPWEB" target="_blank"><img src="images/apoyan/bolsa-subproductos-catalunya.jpg" alt="Bolsa de Subproductos de Catalunya" title="Bolsa de Subproductos de Catalunya" /></a></div>
+                <!-- div class="logo"><a href="http://www.nuevosaires.org.ar" target="_blank"><img src="images/apoyan/nuevos-aires.jpg" alt="Nuevos Aires" title="Nuevos Aires" /></a></div -->
+                <!-- div class="logo"><a href="http://www.rafaela-sustentable.com.ar/" target="_blank"><img src="images/apoyan/rafela-sustentable-logo.jpg" alt="Programa Rafaela Mas Sustentable" title="Programa Rafaela Mas Sustentable" /></a></div -->
+                <!-- div class="logo"><a href="http://www.asociacionsustentar.org/" target="_blank"><img src="images/apoyan/sustentar.jpg" alt="Sustentar" title="Sustentar" /></a></div-->				
+                <!-- div class="logo noMr"><a href="http://ars.org.ar/" target="_blank"><img src="images/apoyan/ars.jpg" alt="ARS" title="ARS" /></a></div -->
+                <!-- div class="logo"><a href="http://www.iswa.org/" target="_blank"><img src="images/apoyan/iswa.jpg" alt="ISWA" title="ISWA" /></a></div -->
+                <!-- div class="logo"><a href="http://www.bidnetwork.org/en/countries/argentina" target="_blank"><img src="images/apoyan/bid-challenge.jpg" alt="BID Network" title="BID Network" /></a></div -->
+                <!-- div class="logo"><a href="http://www.cairplas.org.ar/" target="_blank"><img src="images/apoyan/cairplas.jpg" alt="CAIRPLAS" title="CAIRPLAS" /></a></div -->
+                <!-- div class="logo noMr"><a href="http://www.utdt.edu/ver_contendo.php?id_contenido=8051&id_item_menu=15759" target="_blank"><img src="images/apoyan/en-di-tella.jpg" alt="ENI Di Tella" title="ENI Di Tella" /></a></div -->
+                <!-- div class="logo"><a href="http://www.ecomonia.org.ar/" target="_blank"><img src="images/apoyan/logo-ecomania.jpg" alt="Ecomania" title="Ecomania" /></a></div -->
+                <!-- div class="logo"><a href="http://www.unaje.org.ar/inicio/index.php" target="_blank"><img src="images/apoyan/una-je.jpg" alt="UNAJE" title="UNAJE" /></a></div -->                
+                <!-- div class="logo noMr"><a href="http://www.dondereciclo.org" target="_blank"><img src="images/apoyan/donde-reciclo.jpg" alt="Donde Reciclo" title="Donde Reciclo" /></a></div -->
+                <!-- div class="logo"><a href="http://www.greentomato.com.ar" target="_blank"><img src="images/apoyan/gt.jpg" alt="Green Tomato Studio" title="Green Tomato Studio" /></a></div -->
+            </div>
+        <div class="clear"></div>
+    </div>
+    <div class="clear"></div>
+</div>

@@ -1,0 +1,13 @@
+p { *font-weight: bold !important; }
+
+#content-wrapper h2 {
+    *font-family:HelvLight;
+    *font-size: 38px;
+    *color: rgb(54,36,16);
+}
+
+.cont-datos-contacto-pie p { *font-size: 12px !important; }
+
+.formTemplate .formEncabezado p { *padding: 4px 0 0 15px !important; }
+
+.formTemplate form { *margin: 20px auto 0px 50px !important; }

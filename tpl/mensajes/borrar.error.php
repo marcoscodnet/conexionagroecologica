@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <link type="text/css" href="../../css/reset.css" rel="stylesheet" />
+        <link type="text/css" href="../../css/mensajes.colorbox.css" rel="stylesheet" />
+        <link type="text/css" href="../../css/formularios.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="formTemplate formBorrarError">
+            <div class="formEncabezado">
+                <p><span class="iconsSprite iconError">ERROR</span></p>
+            </div>
+            <div class="camposContainer">
+                <p><b>La publicaci&oacute;n no se pudo eliminar</b></p>
+                <br/>
+                <p>Ha ocurrido un error mientras se eliminaba la publicaci&oacute;n.</p>
+                <p>Si la publicaci&oacute;n no se elimin&oacute; exitosamente, int&eacute;ntelo m&aacute;s tarde.</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </body>
+</html>

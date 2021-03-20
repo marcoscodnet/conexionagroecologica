@@ -1,0 +1,16 @@
+[06-Apr-2016 14:31:31 UTC] PHP Fatal error:  Uncaught exception 'Doctrine_Connection_Mysql_Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbconrec.lista_precio' doesn't exist. Failing Query: "SELECT COUNT(l.id) AS l__0 FROM lista_precio l"' in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php:1082
+Stack trace:
+#0 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(1025): Doctrine_Connection->rethrowException(Object(PDOException), Object(Doctrine_Connection_Mysql), 'SELECT COUNT(l....')
+#1 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Query/Abstract.php(976): Doctrine_Connection->execute('SELECT COUNT(l....', Array)
+#2 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Query/Abstract.php(1026): Doctrine_Query_Abstract->_execute(Array)
+#3 /home/conexreciclado/public_html/admin/php/providers/recicladoresListaPrecios.provider.php(47): Doctrine_Query_Abstract->execute(Array, 6)
+#4 {main}
+  thrown in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php on line 1082
+[06-Apr-2016 14:31:54 UTC] PHP Fatal error:  Uncaught exception 'Doctrine_Connection_Mysql_Exception' with message 'SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dbconrec.lista_precio' doesn't exist. Failing Query: "SELECT COUNT(l.id) AS l__0 FROM lista_precio l"' in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php:1082
+Stack trace:
+#0 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(1025): Doctrine_Connection->rethrowException(Object(PDOException), Object(Doctrine_Connection_Mysql), 'SELECT COUNT(l....')
+#1 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Query/Abstract.php(976): Doctrine_Connection->execute('SELECT COUNT(l....', Array)
+#2 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Query/Abstract.php(1026): Doctrine_Query_Abstract->_execute(Array)
+#3 /home/conexreciclado/public_html/admin/php/providers/recicladoresListaPrecios.provider.php(47): Doctrine_Query_Abstract->execute(Array, 6)
+#4 {main}
+  thrown in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php on line 1082

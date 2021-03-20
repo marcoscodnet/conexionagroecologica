@@ -1,0 +1,89 @@
+<?php
+session_start();
+include_once('php/clases/Archivo.php');
+include_once('php/clases/Includer.php');
+include_once('php/includes/defined.php');
+include_once('php/bootstrap.php');
+$html = Archivo::leer('tpl/header.html');
+$html = str_replace('<!--{recursoJs}-->', Includer::addJs('jquery-1.6.1.min', 'loginRegister', 'jquery.nivo.slider.pack', 'cufon-yui', 'HelvLight_400.font', 'jquery.colorbox', 'dropdown-menu', 'nivo-slider-home', 'validadores', 'newsletter'), $html);
+$html = str_replace('<!--{recursoCss}-->', Includer::addCss('reset', 'vistas', 'nivo-slider', 'colorbox'), $html);
+$html = preg_replace('/<!-+\{*[A-Za-z0-9]*\}*-+>/', '', $html);
+echo($html);
+?>
+<head>
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
+  $(function() {
+    $( "#dialog" ).dialog();
+  });
+  </script>
+<head>
+
+<body>
+	<!-- ENCABEZADO - LOGO - BOTONERA -->
+    <div id="header-wrapper">
+    	<div class="contAnchoHeader">
+        <?php
+			include_once('php/comprobadores/encabezado.comprobador.php');
+			$html = Archivo::leer('tpl/logoBotonera.html');
+                        $class = (isset($_SESSION['log']))?'':'class="login"';
+                        $vender = (isset($_SESSION['log']))?'publicar.php':'tpl/formularios/login.php';
+                        $html = str_replace('<!--{comprobarVender}-->', $vender, $html);
+                        $html = str_replace('<!--{class}-->', $class, $html);
+                        echo($html);
+		?>
+        </div>
+		
+		<div id="dialog" title="" class="dialog">
+  <p>Gracias por entrar a <b>Conexi&oacute;nReciclado</b> - La Bolsa de Sub Productos de Argentina.</p><br>
+Por el momento est&aacute; disponible una versi&oacute;n beta del mercado online de residuos.<br><br>
+Nos encontramos desarrollando la nueva versi&oacute;n que ser&aacute; lanzada en los pr&oacute;ximos meses, la cual contar&aacute; con mejoras del mercado online y otras herramientas informativas, entre ellas:<br>
+<br>
+- Banco de buenas pr&aacute;cticas y casos exitosos de conexi&oacute;n.<br>
+- Base de datos de consultoras, proveedores de tecnolog&iacute;as, equipos, servicios.<br>
+- Base de datos de empresas transportistas de residuos autorizadas.<br>
+- Base de datos de centros de investigación y desarrollo y laboratorios recomendados.<br>
+- Base de datos de cooperativas de recuperadores urbanos.<br>
+- Oferta de capacitaciones, charlas, eventos, ferias.<br>
+- Lista de precios de referencia de principales subproductos.<br>
+- Marco legal correspondiente.<br>
+- Mapa de empresas recicladoras.<br>
+- Newsletter de ofertas de subproductos.<br>
+- Newsletter de noticias del sector.<br>
+<br>
+Muchas gracias<br>
+<img src="images/conexion-reciclado.png" border="0">
+<br>
+</p>
+	</div>
+
+    </div>
+    <!-- FIN ENCABEZADO - LOGO - BOTONERA -->
+    
+    <div class="clear"></div>
+
+    <!-- CONTENIDO HOME -->
+    <div id="content-wrapper">
+    <?php
+    	$html = Archivo::leer('tpl/contenidoHome.html');
+		include_once('php/replacers/contenidoHome.replacer.php');
+		echo ($html);
+	?>
+    </div>
+    <!-- FIN CONTENT WRAPPER -->
+
+    <div class="clear"></div>
+    
+    <!-- FOOTER WRAPPER -->
+    <div id="footer-wrapper">
+    <?php
+    	$html = Archivo::leer('tpl/pieDePagina.html');
+		include_once('php/replacers/pieDePagina.replacer.php');
+		echo ($html);
+	?>
+    </div>
+    <!-- FIN FOOTER WRAPPER -->
+</body>
+</html>

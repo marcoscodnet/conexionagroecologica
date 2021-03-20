@@ -1,0 +1,1 @@
+<p>El usuario<!--{usuario}--><!--{notificacion}--><a href="articulo?id=<!--{productoId}-->"><!--{productoTitulo}--></a></p><!--{acciones}-->

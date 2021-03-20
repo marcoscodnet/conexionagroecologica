@@ -1,0 +1,52 @@
+AddDefaultCharset UTF-8
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^casos$ casosb.php
+RewriteRule ^caso/?$ casob.php
+RewriteRule ^caso/([0-9a-zA-Z-_]+)$ casob.php?slug=$1
+RewriteRule ^casos/categorias/?$ casos-categorias.php
+RewriteRule ^casos/categoria/?$ casos-categoria.php
+RewriteRule ^casos/categoria/([0-9]+)$ casos-categoria.php?id=$1
+
+RewriteRule ^proveedores$ proveedoresb.php
+RewriteRule ^proveedor/?$ proveedorb.php
+RewriteRule ^proveedor/([0-9a-zA-Z-_]+)$ proveedorb.php?slug=$1
+RewriteRule ^proveedores/categorias/?$ proveedores-categorias.php
+RewriteRule ^proveedores/categoria/?$ proveedores-categoria.php
+RewriteRule ^proveedores/categoria/([0-9]+)$ proveedores-categoria.php?id=$1
+
+RewriteRule ^nos-apoyan/listado$ nos-apoyan-listadob.php
+RewriteRule ^nos-apoyan/categorias/?$ nos-apoyan-categorias.php
+RewriteRule ^nos-apoyan/?$ nos-apoyanb.php
+RewriteRule ^nos-apoyan/([0-9a-zA-Z-_]+)$ nos-apoyanb.php?slug=$1
+
+
+RewriteRule ^recicladores$ recicladoresb.php
+RewriteRule ^reciclador/?$ recicladorb.php
+RewriteRule ^reciclador/([0-9a-zA-Z-_]+)$ recicladorb.php?slug=$1
+RewriteRule ^recicladores/listaPrecios/?$ recicladores-listaPrecios.php
+RewriteRule ^recicladores/listaPrecio/?$ listaPrecio.php
+RewriteRule ^recicladores/listaPrecio/([0-9a-zA-Z-_]+)$ listaPrecio.php?slug=$1
+
+
+RewriteRule ^eventos$ eventosb.php
+RewriteRule ^evento/?$ eventob.php
+RewriteRule ^evento/([0-9a-zA-Z-_]+)$ eventob.php?slug=$1
+
+RewriteRule ^jornadas$ jornadasb.php
+RewriteRule ^jornada/?$ jornadab.php
+RewriteRule ^jornada/([0-9a-zA-Z-_]+)$ jornadab.php?slug=$1
+
+RewriteRule ^popups$ popupsb.php
+RewriteRule ^popup/?$ popupb.php
+RewriteRule ^popup/([0-9a-zA-Z-_]+)$ popupb.php?slug=$1
+
+RewriteRule ^usuarioIntereses$ usuarioInteresesb.php
+RewriteRule ^exportarExcel/?$ exportarExcel.php
+
+
+RewriteRule ^login/?$ loginb.php
+RewriteRule ^salir/?$ php/controllers/logout.controller.php

@@ -1,0 +1,49 @@
+<form id="form_registro" name="form_contacto" method="post" action="<!--{formAccion}-->">
+    <div class="camposContainer">
+        <label for="nombre">Nombre <sup>*</sup></label>
+        <input type="text" value="<!--{usuarioNombre}-->" name="nombre" maxlength="42" id="nombre" />
+        <label for="apellido">Apellido <sup>*</sup></label>
+        <input type="text" value="<!--{usuarioApellido}-->" name="apellido" maxlength="42" id="apellido" />
+        <label for="selectProvincia">Provincia <sup>*</sup></label>
+        <!--{provinciaToSelect}-->
+        <label for="selectLocalidad">Localidad <sup>*</sup></label>
+        <span id="localidadContenedor">
+           <!--{localidadesToSelect}-->
+        </span>
+        <label for="email">E-mail <sup>*</sup></label>
+        <input type="text" value="<!--{usuarioEmail}-->" name="email" maxlength="42" id="email" />
+        <label for="telefonoArea">Tel&eacute;fono</label>
+        <input type="text" value="<!--{telefonoArea}-->" name="telefonoArea" maxlength="42" id="telefonoArea" style="width:40px" />
+        <input type="text" value="<!--{telefonoNumero}-->" name="telefonoNumero" maxlength="42" id="telefonoNumero" style="width:195px" />
+        <label for="celularArea">Celular</label>
+        <input type="text" value="<!--{celularArea}-->" name="celularArea" maxlength="42" id="celularArea" style="width:40px" />
+        <input type="text" value="<!--{celularNumero}-->" name="celularNumero" maxlength="42" id="celularNumero" style="width:195px" />
+        <p> <label for="propietario" class="propietario">Propietario</label>
+                        <input class="propietario" type="checkbox" name="propietario" id="propietario"/>
+            <label for="propietario" class="propietario">Productor</label>
+                        <input class="propietario" type="checkbox" name="productor" id="productor"/></p>
+        <p id="checkMensaje"></p>
+        <!--<label for="company">Compa&ntilde;ia <sup>*</sup></label>
+        <input type="text" value="<!--{usuarioCompany}->" name="company" maxlength="42" id="company" />
+        <label for="razon">Raz&oacute;n Social <sup>*</sup></label>
+        <input type="text" value="<!--{usuarioRazon}->" name="razon" maxlength="42" id="razon" />
+        <label for="cuit">C.U.I.T./C.U.I.L. <sup>*</sup></label>
+        <input type="text" value="<!--{usuarioCuit}->" name="cuit" maxlength="42" id="cuit" />-->
+        <label for="pass">Contrase&ntilde;a</label>
+        <input type="password" value="" name="pass" maxlength="42" id="pass" />
+        <label for="pass_2">Confirmar contrase&ntilde;a</label>
+        <p id="passMensaje"></p>
+        <input type="password" value="" name="pass_2" maxlength="42" id="pass_2" />
+        <p> <input class="propietario" type="checkbox" name="datos_disponibles" id="datos_disponibles" checked/><label for="propietario" class="propietario">Acepto que mis datos est&eacute;n disponibles para ser contactado por otros productores/propietarios</label>
+                        
+            </p>
+        
+    </div>
+    <div class="clear"></div>
+    <!--<input type="checkbox" name="aceptar" id="aceptar" /><label for="aceptar">He le&iacute;do y acepto los t&eacute;rminos y condiciones</label>-->
+    <div class="camposContainer" style="margin-top: 20px;">
+        <a class="cerrarColorBox">Cancelar</a>
+        <input class="formBtnSprite btnRegistro" type="submit" name="login" value=" " id="registroForm" />
+    </div>
+    <div class="clear"></div>
+</form>

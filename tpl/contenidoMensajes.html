@@ -1,0 +1,54 @@
+<div id="contenedorBloqueSolapa"> 
+    <div class="solapaVerdeTitulos"> 
+        <p>Mi Conexi&oacute;n</p>
+    </div> 
+    <div class="clear"></div> 
+    <div class="contInfoBloques" style="padding-top: 0px !important;"> 
+ 
+        <div class="contBotonesHeadMiConxion"> 
+            <ul> 
+                <li><a href="mi-conexion.php">Actividad</a></li> 
+                <li class="linea"></li> 
+                <li><a href="mensajes.php" class="activo">Mensajes</a></li>
+                 <li class="linea"></li> 
+                <li><a href="javascript:void(0)">Mi cuenta</a></li> 
+                <li class="linea"></li> 
+                <li><a href="javascript:void(0)">Datos Personales</a></li> 
+            </ul> 
+        </div> 
+ 
+        <div class="clear"></div> 
+        <div class="linea"></div> 
+        <div class="texto"> 
+            <div class="colIzqActividad"> 
+                <ul> 
+                	<li><a href="javascript:void(0)" class="activo" id="listarMensajesRecibidos">Mensajes Recibidos</a></li> 
+                    <li><a href="javascript:void(0)" id="listarMensajesEnviados">Mensajes Enviados</a></li> 
+                   
+                </ul> 
+ 
+            </div> 
+            <div class="colDerActividad"> 
+                <div class="headerPerfilDerecha"> 
+                    <p class="tituloSeccionPerfil">Pendientes</p> 
+                </div> 
+                <div class="clear"></div> 
+                <div class="itemsTopPerfil"> 
+                    <ul> 
+                        <li><a href="#">Fecha:</a></li> 
+                        <li><a href="#">Mensaje:</a></li> 
+                    </ul> 
+                </div> 
+                <div class="clear"></div> 
+                <div class="bloqueContenedorCajasMensajes"> 
+                	<div id="listarMensajes">
+                    </div>
+                </div> 
+            </div> 
+            <div class="clear"></div> 
+        </div> 
+        <div class="clear"></div> 
+    </div> 
+    <input type="hidden" name="codigo" id="codigo" value="<?php echo($_SESSION['codigoUsuario']); ?>" />
+    <div class="clear"></div> 
+</div>

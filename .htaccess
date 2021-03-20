@@ -1,0 +1,20 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^conexionagroecologica.com$ [NC]
+RewriteRule ^(.*)$ http://localhost/conexionagroecologica/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^casos-exitosos$ casos-exitososb.php
+RewriteRule ^caso-exitoso/([0-9a-zA-Z-_]+)$ caso-exitosob.php?slug=$1
+
+RewriteRule ^proveedores$ proveedoresb.php
+#RewriteRule ^proveedor/([0-9a-zA-Z-_]+)$ proveedorb.php?slug=$1
+
+RewriteRule ^recicladores$ recicladoresb.php
+#RewriteRule ^evento/([0-9a-zA-Z-_]+)$ eventob.php?slug=$1
+
+RewriteRule ^eventos$ eventosb.php
+#RewriteRule ^evento/([0-9a-zA-Z-_]+)$ eventob.php?slug=$1
+
+RewriteRule ^consultas$ consultasb.php

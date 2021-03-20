@@ -1,0 +1,6 @@
+/* Estilos del slide de fotos */
+#imagenes {position:relative; margin:0; padding:0}
+#imagenes img {position:absolute; top:0; left:0; z-index:8; opacity:0.0; }
+#imagenes img.active {z-index:10; opacity:1.0}
+#imagenes img.last-active {z-index:9}
+/* **** */

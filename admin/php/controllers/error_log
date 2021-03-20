@@ -1,0 +1,32 @@
+[21-Dec-2015 16:01:36 UTC] PHP Notice:  Undefined index: orden in /home/conexreciclado/public_html/admin/php/controllers/ordenar.controller.php on line 3
+[29-Jan-2016 23:42:06 UTC] PHP Fatal error:  Uncaught exception 'Doctrine_Connection_Mysql_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`dbconrec`.`reciclador`, CONSTRAINT `reciclador_id_localidad_localidad_id` FOREIGN KEY (`id_localidad`) REFERENCES `localidad` (`id`))' in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php:1082
+Stack trace:
+#0 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection/Statement.php(269): Doctrine_Connection->rethrowException(Object(PDOException), Object(Doctrine_Connection_Statement))
+#1 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(1042): Doctrine_Connection_Statement->execute(Array)
+#2 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(687): Doctrine_Connection->exec('INSERT INTO rec...', Array)
+#3 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection/UnitOfWork.php(635): Doctrine_Conn in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php on line 1082
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: id in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 5
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: nombre in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 13
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: telefono in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 14
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: email in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 15
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: web in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 16
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: localidad in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 17
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: tipo in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 18
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: direccion in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 19
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: latitud in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 20
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: longitud in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 21
+[29-Jan-2016 23:42:26 UTC] PHP Notice:  Undefined index: id in /home/conexreciclado/public_html/admin/php/controllers/reciclador.controller.php on line 35
+[30-Jan-2016 00:33:10 UTC] PHP Fatal error:  Uncaught exception 'Doctrine_Connection_Mysql_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`dbconrec`.`reciclador`, CONSTRAINT `reciclador_id_localidad_localidad_id` FOREIGN KEY (`id_localidad`) REFERENCES `localidad` (`id`))' in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php:1082
+Stack trace:
+#0 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection/Statement.php(269): Doctrine_Connection->rethrowException(Object(PDOException), Object(Doctrine_Connection_Statement))
+#1 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(1042): Doctrine_Connection_Statement->execute(Array)
+#2 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(687): Doctrine_Connection->exec('INSERT INTO rec...', Array)
+#3 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection/UnitOfWork.php(635): Doctrine_Conn in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php on line 1082
+[10-Mar-2016 14:40:19 UTC] PHP Fatal error:  Uncaught exception 'Doctrine_Connection_Mysql_Exception' with message 'SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`dbconrec`.`caso`, CONSTRAINT `caso_id_subcategoria_subcategoria_id` FOREIGN KEY (`id_subcategoria`) REFERENCES `subcategoria` (`id`))' in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php:1082
+Stack trace:
+#0 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection/Statement.php(269): Doctrine_Connection->rethrowException(Object(PDOException), Object(Doctrine_Connection_Statement))
+#1 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(1042): Doctrine_Connection_Statement->execute(Array)
+#2 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php(687): Doctrine_Connection->exec('INSERT INTO cas...', Array)
+#3 /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection/UnitOfWork.php(635): Doctrine_Conn in /home/conexreciclado/public_html/php/lib/vendor/doctrine/Doctrine/Connection.php on line 1082
+[28-Mar-2016 19:43:02 UTC] PHP Notice:  Undefined index: orden in /home/conexreciclado/public_html/admin/php/controllers/ordenar.controller.php on line 3
+[22-Apr-2016 19:12:11 UTC] PHP Notice:  Undefined index: src in /home/conexreciclado/public_html/admin/php/controllers/borrarImagen.controller.php on line 6

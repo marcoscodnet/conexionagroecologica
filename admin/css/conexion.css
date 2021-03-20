@@ -1,0 +1,222 @@
+#especie .smart-form .label {font-weight: bold; margin-top: 20px}
+#especie .smart-form .label.tag {font-weight: normal; margin: 0}
+fieldset {
+display: block;
+padding: 25px 14px 5px;
+border: none;
+background: rgba(255,255,255,.9);
+position: relative;
+}
+hr.bloque {margin: 30px 0 10px 0}
+.google_maps {height: 500px}
+#map_region {height: 75vh}
+.switch-state {cursor: pointer}
+
+/*ajax uploader*/
+.vista-previa {position: relative}
+.vista-previa a {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    padding: 6px 12px;
+    display: none
+}
+.vista-previa .btn:active {position: absolute; top: 5px !important; left: inherit !important}
+
+.vista-previa .description {
+    position: absolute;
+    bottom: 0;
+    height: 20px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    text-align: center;
+    margin: 0
+}
+.vista-previa .info {width: 100%; height: 24%; position: absolute; top: 48%; text-align: center; cursor: pointer}
+.vista-previa img {border: 1px solid rgba(0,0,0,.08); width: 100%; cursor: pointer}
+.vista-previa label.uploader {width: 100%}
+
+.nativaDataHead {
+    padding: 20px;
+    width: 100%;
+    display: block;
+    background-color: #fff;
+    border: 1px solid #d0dbdd;
+    overflow: hidden;
+    text-align: left;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(40, 40, 40, 0.2);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(40, 40, 40, 0.2);
+    box-shadow: 0px 0px 2px 0px rgba(40, 40, 40, 0.2);
+    
+}
+/*fin ajax uploader*/
+
+/*regiones tags*/
+div.tagsinput {
+    border: 1px solid #CCC;
+    background: #FFF;
+    padding: 5px;
+    width: 300px;
+    height: 100px;
+    overflow-y: auto;
+}
+
+div.tagsinput div {
+    display: inline-block;
+}
+
+div.tagsinput input {
+    width: 80px;
+    margin: 0px;
+    font-family: helvetica;
+    font-size: 13px;
+    border: 1px solid transparent !important;
+    padding: 5px;
+    background: transparent;
+    color: #000;
+    outline: 0px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.tags_clear {
+    clear: both;
+    width: 100%;
+    height: 0px;
+}
+
+.tagsinput .tag {
+    color: #FFF;
+    position: relative;
+    margin: 3px 0 3px 2px;
+    display: inline-block;
+    line-height: 13px
+}
+
+.tagsinput>span {
+    border-radius: 0!important;
+    font-weight: 400;
+    padding: 3px 28px 4px 8px;
+    font-size: 13px;
+    border: 1px solid #285E8E;
+    background: #3276B1;
+}
+
+.tagsinput .tag-remove {
+    display: block;
+    top: -1px;
+    right: 0;
+    padding: 3px;
+    width: 13px;
+    height: 16px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.tagsinput .tag-remove:after {
+    content: "\f057";
+    font-family: fontAwesome;
+    padding: 2px 1px;
+    line-height: 17px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.tagsinput .tag-remove:hover {
+    background: rgba(0,0,0,.3);
+}
+
+
+/*tags*/
+.waiting {
+    background-color: #e3e3e3 !important; 
+}
+
+#sortable1, #sortable2 {
+    width: 100%;
+    min-height: 100px;
+    margin: 0;
+    padding: 5px 0 0 0;
+    float: left;
+    margin-right: 10px;
+    background-color: #f3f3f3;
+    -webkit-transition: background-color 400ms linear;
+    -moz-transition: background-color 400ms linear;
+    -o-transition: background-color 400ms linear;
+    -ms-transition: background-color 400ms linear;
+    transition: background-color 400ms linear;
+}
+
+#sortable1 .ui-state-highlight, #sortable2 .ui-state-highlight {
+    margin: 10px 5px;
+}
+
+.nativaDataItem {
+    background: #fff;
+    padding: 8px 13px;
+    border: 1px solid #d0dbdd;
+    margin: 10px 5px;
+    overflow: hidden;
+    cursor: move;
+    -webkit-box-shadow: 0px 0px 2px 0px rgba(40, 40, 40, 0.2);
+    -moz-box-shadow: 0px 0px 2px 0px rgba(40, 40, 40, 0.2);
+    box-shadow: 0px 0px 2px 0px rgba(40, 40, 40, 0.2);
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.nativaDataItem:hover {
+    border-color: #19b99a;
+}
+
+.nativaDataItem h3 {
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 8px 0;
+    float: left;
+    color: rgb(51, 51, 51)
+}
+
+.nativaDataItem h3 i {
+    margin-right: 5px;
+    color: #94aab0;
+}
+
+.nativeDataCardItem {
+    width: 100%;
+    height: 80px;
+    float: left;
+    margin-top: 00px;
+}
+
+.rangeDots {
+    text-align: right;
+    float: right;
+}
+
+.rangeDots i {
+    margin-right: 0;
+}
+
+.rangeAlto {
+    color: #e74c3c;
+}
+
+.rangeBajo {
+    color: #2ecc71;
+}
+
+.rating .fa-circle {
+    font-size: 10px;
+}
